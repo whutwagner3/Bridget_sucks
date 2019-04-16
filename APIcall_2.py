@@ -34,9 +34,9 @@ def module_2_api_call()
 	final['papers_id']=record['IdList']
 	client = ensembl_rest.EnsemblClient()
 	for genes in geneIDs:
-    	temp = client.sequence_id(genes)
-  	   final['ids'].append(genes)
- 	   final['seq'].append(temp['seq'])
+    		temp = client.sequence_id(genes)
+  		final['ids'].append(genes)
+ 		final['seq'].append(temp['seq'])
 
 if __name__ == '__main__':
 	moudule_2_api_call()
