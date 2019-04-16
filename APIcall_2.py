@@ -12,7 +12,7 @@ def fetch_details(id_list):
 			       id=ids)
 	results = Entrez.read(handle)
 	return results
-def module_2_api_call()
+def module_2_api_call():
 	organism='aedes aegypti'
 	geneIDs=['AAEL003439', 'AAEL011411', 'AAEL012522', 'AAEL012774', 'AAEL012864', 'AAEL013263']
 	ied = ",".join(geneIDs)
