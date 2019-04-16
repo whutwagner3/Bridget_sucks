@@ -6,7 +6,7 @@ final={}
 
 def fetch_details(id_list):
 	ids = ','.join(id_list)
-	Entrez.email = sys.argv[0]
+	Entrez.email = sys.argv[1]
 	handle = Entrez.efetch(db='pubmed',
 			       retmode='xml',
 			       id=ids)
@@ -18,7 +18,7 @@ def module_2_api_call():
 	ied = ",".join(geneIDs)
 
 	#print(ied[:-1])
-	Entrez.email=sys.argv[0]
+	Entrez.email=sys.argv[1]
 	handle = Entrez.esearch(db="pubmed",retmax=13,id=ied,term=organism)
 	record = Entrez.read(handle)
 	handle.close()
