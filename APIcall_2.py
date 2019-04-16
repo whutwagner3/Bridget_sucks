@@ -39,4 +39,4 @@ def module_2_api_call():
  		final['seq'].append(temp['seq'])
 
 if __name__ == '__main__':
-	moudule_2_api_call()
+	module_2_api_call()
