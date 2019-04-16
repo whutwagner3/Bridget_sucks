@@ -5,7 +5,7 @@ import sys
 
 def fetch_details(id_list):
     ids = ','.join(id_list)
-    Entrez.email = 'mani.jain0295@gmail.com'
+    Entrez.email = sys.argv[0]
     handle = Entrez.efetch(db='pubmed',
                            retmode='xml',
                            id=ids)
