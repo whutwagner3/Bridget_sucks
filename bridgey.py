@@ -2,6 +2,22 @@
 
 ##pip install biomart or conda install -c bioconda bioconductor-biomart
 import biomart
+import sys
+
+def species2dataset():
+    '''
+    If we want to choose an input species (by name), this gets the available
+        species names and datasets. We can use this to populate a drop-down
+        box with readable species names and know the dataset name to query.
+    Input: none
+    Returns: dict of species name: database name
+    '''
+    srv = biomart.BiomartServer('http://biomart.vectorbase.org/biomart')
+    db = srv.databases['vb_gene_mart_1902']
+    
+    # db.datasets is dict of dataset_name: object
+    # object has attribute display_name with the species full name
+    return {y.display_name: x for x, y in db.datasets.items()}
 
 #biomart.list_marts()#This is useless
 server=biomart.BiomartServer('http://biomart.vectorbase.org/biomart')#Erased_Unreasonably_Harsh_Comment
@@ -10,20 +26,35 @@ server=biomart.BiomartServer('http://biomart.vectorbase.org/biomart')#Erased_Unr
 #******THESE DATASET NAMES NEED TO BE GIVEN******
 #print(pleaseGodWork.show_datasets())
 #******THESE DATASET NAMES NEED TO BE GIVEN******
-inter=server.datasets['alvpagwg_eg_gene']
+# dataset_name = species2dataset()['Aedes aegypti (LVP_AGWG) genes (AaegL5.1)'] # for example
+dataset_name = 'alvpagwg_eg_gene'
+inter=server.datasets[dataset_name]
 
 
 FOR_BRIDGEY={}
 ##FOR_BRIDGEY['Ensembl_GENE_ID']=[go-term1,go-term2, ...] for all genes in dataset
-#a lot are empty. But I didn't check our actual genes were using as examples
-resp = inter.search({'attributes':['ensembl_gene_id','name_1006']})
-for line in resp.iter_lines():
-    line=line.decode('utf-8')
-    text=line.strip().split(None,1)
+resp = inter.search({'attributes':['ensembl_gene_id','go_id','name_1006'],
+                    'filters': {'ensembl_gene_id': geneIDs}})
+resp = [x.decode('utf-8').strip() for x in resp.iter_lines()]
+# if we want to write to file:
+# open('geneID_biomart_query.tsv', 'w').write('\n'.join(resp))
+
+for line in resp:
+    # line=line.decode('utf-8')
+    text=line.strip().split('\t')
+    
+    # add GO ids and terms to dictionary mapping IDs to terms for later
+    if text[1] in go_id2term and go_id2term[text[1]] != text[2]:
+        print('what fresh torture have I discovered?')
+        print(f'{text[1]}: {text[2]} or {go_id2term[text[1]]}?')
+        sys.exit()
+    else: go_id2term[text[1]] = text[2]
+
+    # add gene ID: go ID to FOR_BRIDGEY
     if text[0] not in FOR_BRIDGEY:
         if len(text)>1:
             FOR_BRIDGEY[text[0]]=[text[1]]
-        else:
+        else:   ### maybe we should ignore these???
             FOR_BRIDGEY[text[0]]=[]
     elif len(text)>1:
         FOR_BRIDGEY[text[0]].append(text[1])
