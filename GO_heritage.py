@@ -33,7 +33,7 @@ def add_entry(key, value, dic):
     '''
     if key in dic:
         if dic[key] != value:
-            print('Nooooo')
+            print('What fresh hell is this?')
             print(f'{key}: {value} or {dic[key]}?')
             sys.exit()
     else:
