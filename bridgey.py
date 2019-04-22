@@ -33,7 +33,6 @@ def get_go(geneIDs):
 
 
     FOR_BRIDGEY={}
-    go_id2term = {}
     ##FOR_BRIDGEY['Ensembl_GENE_ID']=[go-term1,go-term2, ...] for all genes in dataset
     resp = inter.search({'attributes':['ensembl_gene_id','go_id','name_1006'],
                         'filters': {'ensembl_gene_id': geneIDs}})
@@ -44,14 +43,6 @@ def get_go(geneIDs):
     for line in resp:
         # line=line.decode('utf-8')
         text=line.strip().split('\t')
-
-        # add GO ids and terms to dictionary mapping IDs to terms for later
-        if len(text) > 1: 
-            if text[1] in go_id2term and go_id2term[text[1]] != text[2]:
-                print('what fresh torture have I discovered?')
-                print(f'{text[1]}: {text[2]} or {go_id2term[text[1]]}?')
-                sys.exit()
-            else: go_id2term[text[1]] = text[2]
 
         # add gene ID: go ID to FOR_BRIDGEY
         if text[0] not in FOR_BRIDGEY:
