@@ -22,8 +22,8 @@ def main():
     gene2go = {x[0]: [y[1] for y in resp if len(y) > 1 and y[0] == x[0]] for x in resp}
     
     edge_list, goid2goterm = build_ontologies(gene2go)
-    return [edge_list, goid2goterm]     # in case you want to look at the variables in Spyder
-    
+    return [edge_list, goid2goterm]       # in case you want to look at the variables in Spyder
+
 # %%
 def add_entry(key, value, dic):
     '''
@@ -44,7 +44,7 @@ def build_ontologies(gene2go):
     '''
     Queries the GO database for all parent GO IDs
     Input: dictionary of gene ID: list of relevant GO IDs
-    Returns: [edge_list (dict of child GO ID to parent GO ID),
+    Returns: [edge_list (list of tuples: (child GO ID, parent GO ID)),
               goid2goterm (dict of GO IDs to GO terms)]
     '''
 
@@ -59,16 +59,18 @@ def build_ontologies(gene2go):
     
 #    # to write to file:
 #    head = response[0]
-#    open('test.tsv', 'w').write('\n'.join(head+response))
-
-    edge_list = {}
+#    open('test.tsv', 'w').write('\n'.join(response))
+    
+    edge_list = []
+    for gene, goIDs in gene2go.items():
+        for go_id in goIDs:
+            edge_list.append((gene, go_id))
     goid2goterm = {}
     for line in [x.split('\t') for x in response[1:]]:
         add_entry(line[0], line[1], goid2goterm)
         add_entry(line[2], line[3], goid2goterm)
-        if line[-1] == 0: continue
-        edge_list[line[4]] = line[2]
-    edge_list.update(gene2go)
+        if line[-1] == '0': continue
+        edge_list.append((line[4], line[2]))
     return [edge_list, goid2goterm]
 
 # %%
