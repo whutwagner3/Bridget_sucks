@@ -19,6 +19,7 @@ def main():
             ].search({'attributes':['ensembl_gene_id', 'go_id', 'name_1006'],
                       'filters': {'ensembl_gene_id': ['AAEL003439', 'AAEL011411', 'AAEL012522',
                                    'AAEL012774', 'AAEL012864', 'AAEL013263']}}).iter_lines()]
+    # dict of gene IDs: [their associated GO IDs]
     gene2go = {x[0]: [y[1] for y in resp if len(y) > 1 and y[0] == x[0]] for x in resp}
     
     edge_list, goid2goterm = build_ontologies(gene2go)
