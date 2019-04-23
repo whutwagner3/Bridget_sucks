@@ -12,24 +12,21 @@
 <!-- select#plotType.form-control | 380 x 32 -->
 
 <body>
-	<div id="locationSelector">
-		<span class="selectorCaption">Location:</span>	
-	</div>
-
 	<div id="swarm-plots" class="sidebar-pane active" style="width: 420px; height: 720px; border: 1px solid #777;">
-		<h3>Insecticide Resistance statistics for selected samples</h3>
+		<h3 style="margin-left: 20px;">Insecticide Resistance statistics for selected samples</h3>
 		
 		<div id="swarm-chart-area" style="display: block;">
-			<label>Phenotypes included in background:</label>
-			<select id="bgPlotType" class="form-control">
+			<label style="margin-left: 20px;">Phenotypes included in background:</label>
+			<select id="bgPlotType" class="form-control" style="width: 380px; margin-left: 20px;">
 				<option value="1">phenotypes matching search</option>
 				<option value="2">phenotypes visible on map (including the ones behind this panel)</option>
 				<option value="3">all phenotypes</option>
 			</select>
 			
-			<div id="measurementSelector">
-				<label>Measurement  type:</label>
-			</div>
+			<label style="margin-left: 20px;">Measurement  type:</label>
+			<select id="bgPlotType" class="form-control" style="width: 380px; margin-left: 20px;">
+				<option value="mortality rate (percent)">mortality rate (percent): 40 phenotypes</option>
+			</select>
 			
 			<svg id="mockupPlot" width="380" height="500" style="width: 380px; height: 500px; border: 0px none; padding-top: 10px; display: inline;">
 			</svg>

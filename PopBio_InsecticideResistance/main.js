@@ -3,52 +3,26 @@ var svg = d3.select('svg');
 var svgWidth = +svg.attr('width');
 var svgHeight = +svg.attr('height');
 
-var padding = {t: 10, r: 30, b: 10, l: 30};
+var padding = {t: 0, r: 0, b: 0, l: 0};
 
 var svgAvailableWidth = svgWidth - padding.l - padding.r;
 var svgAvailableHeight = svgHeight - padding.t - padding.b;
 
-var topHistogramPadding = {t: 20, r: 0, b: 20, l: 0};
-var bottomHistogramPadding = {t: 20, r: 0, b: 20, l: 0};
+var chartWidth = svgAvailableWidth * 0.8;
+var chartHeight = svgAvailableHeight * 0.8;
 
-var topHistogramProportion = 0.5;
-var bottomHistogramProportion = 1 - topHistogramProportion;
-
-var topHistogramWidth = svgAvailableWidth;
-var topHistogramHeight = svgAvailableHeight * topHistogramProportion;
-
-var bottomHistogramWidth = svgAvailableWidth;
-var bottomHistogramHeight = svgAvailableHeight * bottomHistogramProportion;
-
-var topHistogramAvailableWidth = topHistogramWidth - topHistogramPadding.l - topHistogramPadding.r;
-var topHistogramAvailableHeight = topHistogramHeight - topHistogramPadding.t - topHistogramPadding.b;
-
-var bottomHistogramAvailableWidth = bottomHistogramWidth - bottomHistogramPadding.l - bottomHistogramPadding.r;
-var bottomHistogramAvailableHeight = bottomHistogramHeight - bottomHistogramPadding.t - bottomHistogramPadding.b;
-
-var topHistogram = svg.append('g')
-	.attr('class', 'histogram')
-	.attr('transform', 'translate(' + [padding.l, padding.t] + ')');
-	
-var bottomHistogram = svg.append('g')
-	.attr('class', 'histogram')
-	.attr('transform', 'translate(' + [padding.l, padding.t+topHistogramHeight] + ')');
-
-var numBins = 20; // number of histogram bins
-	
-
-function locationChanged() {
-	currentLocation = d3.select('select').property('value');
-	updateChart(currentLocation);
-}
-
-function measurementChanged() {
-	console.log("Measurement changed");
+function getRandomColor() {
+	var choices = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+	var c = '#';
+	for (var i = 0; i < 6; i++) {
+		var index = Math.floor(Math.random() * choices.length);
+		c = c + choices[index];
+	}
+	return c;
 }
 
 d3.csv('insecticide-resistance.csv',
-	function(row) {
-			
+	function(row) {	
 		var sample = {
 			sampleId: row['Sample ID'],
 			assayId: row['Assay ID'],
@@ -89,169 +63,129 @@ d3.csv('insecticide-resistance.csv',
 			console.error(error);
 			return;			
 		}		
-				
-		// Set global variables
-		samples = dataset;
-		
-		allLocations = d3.map(dataset, function(d) {
-			return d.locations;
-		}).keys().sort();
-		currentLocation = allLocations[0];
-		
-		// add select box and callback for location
-		var locationSelectBox = d3.select('#locationSelector')
-			.attr('style', 'margin-left: 10px;')
-			.append('select')
-			.on('change', locationChanged);
-			
-		var locationOptions = locationSelectBox.selectAll('option')
-			.data(allLocations)
-			.enter()
-			.append('option')
-			.text(function (d) { 
-				return d; 
-			});
-			
-		measurementSelectBox = d3.select('#measurementSelector')
-			.append('select')
-			.attr('class', 'form-control');
-						
-		updateChart(currentLocation); 
-	});
-	
-	
-function updateChart(loc) {
-	
-	var byLocation = samples.filter(function(d) {
-		return d.locations == loc;
-	});
-		
-	var measurementTypes = d3.map(byLocation, function(d) {
-		return d.measurementType;
-	}).keys().sort();
-	currentMeasurementType = measurementTypes[0];
-	
-	// Add select box and callback for measurement type
-	var counts = new Array(measurementTypes.length);
-	for (var i = 0; i < counts.length; i++) {
-		counts[i] = 0;
-	}
-	byLocation.forEach(function(d) {
-		var index = measurementTypes.indexOf(d.measurementType);
-		counts[index]++;
-	});
-	
-	// Enter, update, exit select options
-	var measurementOptions = measurementSelectBox.selectAll('option')
-		.data(measurementTypes);
-			
-	var measurementOptionsEnter = measurementOptions.enter()
-		.append('option')
-		.text(function(d) {
-			var index = measurementTypes.indexOf(d);
-			var count = counts[index];
-			return d  + ': ' + count + " phenotypes";
+					
+		// We might not need to use this for now
+		var background = dataset.filter(function(d) {
+			return d.measurementType == "mortality rate (percent)" && d.phenotypeValue <= 100.0;
 		});
 		
-	// There's a bug where the count isn't updated when the measurement option doesn't change
-	measurementOptions.merge(measurementOptionsEnter); 
-	
-	measurementOptions.exit().remove();
-	
-	// Now for the actual visualization!
-	// Let's suppose mortality rate (percent) is the only possible measurement type for now
-	
-	// Create histograms from the phenotype values
-	// I borrowed heavily from this example: https://bl.ocks.org/d3noob/96b74d0bd6d11427dd797892551a103c
-	
-	var background = samples.filter(function(d) {
-		return d.measurementType == "mortality rate (percent)"; // Hard-code this for now, unfortunately
-	});
-	
-	var byMeasurement = byLocation.filter(function(d) {
-		return d.measurementType == "mortality rate (percent)"; // Hard-code this for now, unfortunately
-	});
-	
-	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ "background" histogram on top ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	var xExtentTop = d3.extent(background, function(d) {
-		return d.phenotypeValue;
-	});
-	
-	var xScaleTop = d3.scaleLinear()
-		.domain(xExtentTop)
-		.range([0, topHistogramAvailableWidth]);
+		var byLocation = dataset.filter(function(d) {
+			return d.locations == "Jamaica"; // hardcoded for our demo
+		});
 		
-	var yScaleTop = d3.scaleLinear()
-		.range([topHistogramAvailableHeight, 0])
-	
-	var topHist = d3.histogram()
-		.value(function(d) {
+		var insecticides = d3.map(byLocation, function(d) {
+			return d.insecticide;
+		}).keys().sort();
+		
+		var subsets = [];
+		
+		insecticides.forEach(function(insecticide) {
+			var byInsecticide = byLocation.filter(function(d) {
+				return d.insecticide == insecticide;
+			});
+			subsets.push({
+				insecticideType: insecticide,
+				color: getRandomColor(),
+				subset: byInsecticide
+			});
+		});
+		
+		// Subsets where location == "Jamaica" and possible insecticides == "malathion" or "permethrin"
+		
+		// Attempt to draw a plot
+		
+		// x-axis = frequency
+		// y-axis = mortality rate (percent)
+		
+		// create scales
+		var xScale = d3.scaleLinear()
+			.domain([0, 1]) // 0% to 100% of selected samples
+			.range([0, chartWidth / 2]);
+			
+		var yExtent = d3.extent(byLocation, function(d) {
 			return d.phenotypeValue;
 		})
-		.domain(xScaleTop.domain())
-		.thresholds(xScaleTop.ticks(numBins));
+			
+		var yScale = d3.scaleLinear()
+			.domain(yExtent) // min/max mortality rate
+			.range([chartHeight, 0]);
+			
+			
+		var xTranslate = 40;
+		var yTranslate = 10;
+			
+		var xAxisX = 0 + xTranslate;
+		var xAxisY = chartHeight + yTranslate;
 		
-	var topBins = topHist(background);
-	
-	yScaleTop.domain([0, d3.max(topBins, function(d) { return d.length; })]);
-	
-	// Enter, update, exit
-	var topBars = topHistogram.selectAll('rect')
-		.data(topBins);
+		var yAxisX = 0 + xTranslate;
+		var yAxisY = 0 + yTranslate;
 		
-	var topBarsEnter = topBars.enter()
-		.append('rect')
-		.attr("class", "bar")
-		.attr("x", 1)
-		.attr("transform", function(d) {
-		  return "translate(" + xScaleTop(d.x0) + "," + yScaleTop(d.length) + ")"; })
-		.attr("width", function(d) { return xScaleTop(d.x1) - xScaleTop(d.x0) - 1 ; })
-		.attr("height", function(d) { return topHistogramAvailableHeight - yScaleTop(d.length); });
-		
-	topBars.merge(topBarsEnter);
-	
-	topBars.exit().remove();
-	
-	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ dynamic histogram on bottom ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-	var xExtentBottom = d3.extent(byMeasurement, function(d) {
-		return d.phenotypeValue;
-	});
-	
-	var xScaleBottom = d3.scaleLinear()
-		.domain(xExtentBottom)
-		.range([0, bottomHistogramAvailableWidth]);
-		
-	var yScaleBottom = d3.scaleLinear()
-		.range([bottomHistogramAvailableHeight, 0])
-	
-	var bottomHist = d3.histogram()
-		.value(function(d) {
-			return d.phenotypeValue;
-		})
-		.domain(xScaleBottom.domain())
-		.thresholds(xScaleBottom.ticks(numBins));	
-		
-	var bottomBins = bottomHist(byMeasurement);
-	
-	yScaleBottom.domain([0, d3.max(bottomBins, function(d) { return d.length; })]);
-	
-	// Enter, update, exit
-	var bottomBars = bottomHistogram.selectAll('rect')
-		.data(bottomBins);
-		
-	var bottomBarsEnter = bottomBars.enter()
-		.append('rect')
-		.attr("class", "bar")
-		.attr("x", 1)
-		.attr("transform", function(d) {
-		  return "translate(" + xScaleBottom(d.x0) + "," + yScaleBottom(d.length) + ")"; })
-		.attr("width", function(d) { return xScaleBottom(d.x1) - xScaleBottom(d.x0) - 1 ; })
-		.attr("height", function(d) { return bottomHistogramAvailableHeight - yScaleBottom(d.length); });
-		
-	bottomBars.merge(bottomBarsEnter);
-	
-	bottomBars.exit().remove();
-}
-	
+		// plots for each subset
+		for (var i = 0; i < subsets.length; i++) {
+			var subset = subsets[i];
+			var subsetData = subset['subset'];
+			
+			// create histogram bins		
+			var bins = [[], [], [], [], [], [], [], [], [], []];
+			
+			subsetData.forEach(function(d) {
+				for (var j = 0; j < 10; j++) {
+					if (d.phenotypeValue >= (j * 10) && d.phenotypeValue < ((j+1) * 10)) {
+						bins[j].push(d);
+					}
+				}
+				if (d.phenotypeValue >= 100) {
+					bins[9].push(d);
+				}
+			});
+			
+			var subsetPlotG = svg.append('g')
+				.attr('class', 'subset-plot')
+				.attr('transform', 'translate(' + [padding.l, padding.t] + ')');
+			
+			// ~~~~~~~~~~~~~~~~~~~~ scatterplot to debug ~~~~~~~~~~~~~~~~~~~~
+			subsetPlotG.selectAll('.data-case')
+				.data(subsetData)
+				.enter()
+				.append('circle')
+				.attr('class', 'data-case')
+				.attr('r', function(d) {
+					return 5;
+				})
+				.attr('cx', function(d) {
+					var xValue = 0;
 
+					for (var j = 0; j < bins.length; j++) {
+						var bin = bins[i];
+						for (var k = 0; k < bin.length; k++) {
+							if (bin[k].sampleId == d.sampleId) {
+								xValue = (bin.length * 1.0) / subsetData.length;
+							}
+						}
+					}
+
+					return xTranslate + xScale(xValue);
+				})
+				.attr('cy', function(d) {
+					return yTranslate + yScale(d.phenotypeValue);
+				})
+				.style('fill', function(d) {
+					return subset['color'];
+				});
+			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+		}
+			
+		// create axes
+		svg.append('g')
+			.attr('class', 'x axis')
+			.attr('transform', 'translate(' + [xAxisX, xAxisY] + ')')
+			.call(d3.axisBottom(xScale).ticks(5));
+			
+		// create axes
+		svg.append('g')
+			.attr('class', 'y axis')
+			.attr('transform', 'translate(' + [yAxisX, yAxisY] + ')')
+			.call(d3.axisLeft(yScale));
+	});
+	
 	
