@@ -52,9 +52,9 @@ def reconstruct_path(u,v,next_1):
         path.append(u)
     return path
 
-def main_2():
+def main_2(file):
     #a_mat,lst_x_y= Create_Adjacency_Matrix(input("Type the name of the file with the edge lists: "))
-    ad_mat,lst_x_y= Create_Adjacency_Matrix("edge_list.txt") #sys.argv[1]
+    ad_mat,lst_x_y= Create_Adjacency_Matrix(file) #sys.argv[1]
     a_mat=ad_mat
     #print(a_mat)
     for i in range(0,len(lst_x_y)):
@@ -102,8 +102,23 @@ def main_2():
         df.loc[val[0],val[1]]=dict_pair[val]
         df.loc[val[1],val[0]]=dict_pair[val]
     df.to_csv("distance_matrix.csv")
-    
+    also_an_edge_list_apparently(df)
+    return df
+
+def also_an_edge_list_apparently(df):
+    nodes_list = df.index.to_list()
+    edges = pd.DataFrame(set([frozenset([x, y]) for x, y in product(nodes_list,
+                              nodes_list) if x != y]))
+    links = list(edges.apply(lambda row: {'source': {'name': row[0]},
+                                          'target': {'name': row[1]},
+                                          'value': int(df.loc[row[0], row[1]])},
+                                            axis=1))
+    nodes = {x:{'name': x} for x in nodes_list}
+    json_obj = json.dumps({'nodes': nodes, 'links': links}, indent=1)
+    with open('json_graph.json', 'w') as f:
+        f.write('const graph = ' + json_obj)
+
 if __name__=="__main__":
-    main_2()
+    dist = main_2('edge_list.txt')
 
 
