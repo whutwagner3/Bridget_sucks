@@ -1,0 +1,1502 @@
+const links = [
+ {
+  "source": "AAEL010959",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL000063",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL004009",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL010439",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL003239",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL004009",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL004009",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL008749",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL010959",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL008202",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL010439",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL002630",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL003297",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL005611",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL000063",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL003239",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL010439",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL003239",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL026011",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL002630",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL017524",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL002630",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL000063",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL003239",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL005611",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL005611",
+  "value": 0
+ },
+ {
+  "source": "AAEL003297",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL002630",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL002630",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL011937",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL005611",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL004009",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL008202",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL004009",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL004665",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL004009",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL000063",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL004665",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL003239",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL017524",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL017524",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL017524",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL000063",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL002623",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL008202",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL026011",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL002630",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL003239",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL004665",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL004665",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL000063",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL011937",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL026011",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL017524",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL010959",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL004505",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL026011",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL004505",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL004505",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL008202",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL002630",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL005611",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL008202",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL005611",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL003297",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL005548",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL010959",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL008202",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL010439",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL010439",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL004009",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL026627",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL004665",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL004009",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL026011",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL011937",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL003239",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL008749",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL005611",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL005611",
+  "value": 0
+ },
+ {
+  "source": "AAEL026011",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL010959",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL017539",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL008202",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL000063",
+  "value": 0
+ },
+ {
+  "source": "AAEL002439",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL011528",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL008749",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL002630",
+  "target": "AAEL017524",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL010439",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL002623",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL008202",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL017539",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL011528",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL003297",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL010439",
+  "target": "AAEL000063",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL002432",
+  "value": 0
+ },
+ {
+  "source": "AAEL000063",
+  "target": "AAEL012636",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL017524",
+  "target": "AAEL004505",
+  "value": 0
+ },
+ {
+  "source": "AAEL003239",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL005548",
+  "target": "AAEL011937",
+  "value": 0
+ },
+ {
+  "source": "AAEL005611",
+  "target": "AAEL000518",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL004009",
+  "target": "AAEL004665",
+  "value": 0
+ },
+ {
+  "source": "AAEL000518",
+  "target": "AAEL002623",
+  "value": 0
+ },
+ {
+  "source": "AAEL002627",
+  "target": "AAEL005611",
+  "value": 0
+ },
+ {
+  "source": "AAEL011937",
+  "target": "AAEL002630",
+  "value": 0
+ },
+ {
+  "source": "AAEL026627",
+  "target": "AAEL004009",
+  "value": 0
+ },
+ {
+  "source": "AAEL004505",
+  "target": "AAEL002439",
+  "value": 0
+ },
+ {
+  "source": "AAEL012636",
+  "target": "AAEL004505",
+  "value": 0
+ }
+]
