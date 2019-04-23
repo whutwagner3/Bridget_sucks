@@ -1,0 +1,109 @@
+nodes = {
+  "AAEL003439": {
+   "name": "AAEL003439"
+  },
+  "AAEL012774": {
+   "name": "AAEL012774"
+  },
+  "AAEL012522": {
+   "name": "AAEL012522"
+  },
+  "AAEL013263": {
+   "name": "AAEL013263"
+  },
+  "AAEL011411": {
+   "name": "AAEL011411"
+  }
+ };
+links = [
+  {
+   "source": {
+    "name": "AAEL003439"
+   },
+   "target": {
+    "name": "AAEL013263"
+   },
+   "value": 9
+  },
+  {
+   "source": {
+    "name": "AAEL003439"
+   },
+   "target": {
+    "name": "AAEL012774"
+   },
+   "value": 1
+  },
+  {
+   "source": {
+    "name": "AAEL003439"
+   },
+   "target": {
+    "name": "AAEL012522"
+   },
+   "value": 9
+  },
+  {
+   "source": {
+    "name": "AAEL012522"
+   },
+   "target": {
+    "name": "AAEL012774"
+   },
+   "value": 9
+  },
+  {
+   "source": {
+    "name": "AAEL013263"
+   },
+   "target": {
+    "name": "AAEL012774"
+   },
+   "value": 9
+  },
+  {
+   "source": {
+    "name": "AAEL003439"
+   },
+   "target": {
+    "name": "AAEL011411"
+   },
+   "value": 7
+  },
+  {
+   "source": {
+    "name": "AAEL013263"
+   },
+   "target": {
+    "name": "AAEL012522"
+   },
+   "value": 1
+  },
+  {
+   "source": {
+    "name": "AAEL011411"
+   },
+   "target": {
+    "name": "AAEL012774"
+   },
+   "value": 7
+  },
+  {
+   "source": {
+    "name": "AAEL012522"
+   },
+   "target": {
+    "name": "AAEL011411"
+   },
+   "value": 1
+  },
+  {
+   "source": {
+    "name": "AAEL013263"
+   },
+   "target": {
+    "name": "AAEL011411"
+   },
+   "value": 1
+  }
+]
