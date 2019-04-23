@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<script src="../lib/d3.v5.min.js"></script>
+<script src="../lib/d3-tip.min.js"></script>
+<style>
+path.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+ellipse {
+  fill: #ccc;
+  /* stroke: black; */
+  stroke-width: 1.5px;
+}
+text {
+  fill: #000;
+  font: 10px sans-serif;
+  pointer-events: none;
+}
+.d3-tip {
+			font-family: sans-serif;
+			font-size: 12px;
+			background: #ccc;
+			color: black;
+			stroke: black;
+			stroke-width: 1.5px;
+			line-height: 1;
+			padding: 4px;
+			border-radius: 6px;
+			}
+	
+</style>
+<body>
+<script>
+// get the data
+links = [
+  {
+   "source": "AAEL003439",
+   "target": "AAEL013263",
+   "value": 9
+  },
+  {
+   "source": "AAEL003439",
+   "target": "AAEL012774",
+   "value": 1
+  },
+  {
+   "source": "AAEL003439",
+   "target": "AAEL012522",
+   "value": 9
+  },
+  {
+   "source": "AAEL012522",
+   "target": "AAEL012774",
+   "value": 9
+  },
+  {
+   "source": "AAEL013263",
+   "target": "AAEL012774",
+   "value": 9
+  },
+  {
+   "source": "AAEL003439",
+   "target": "AAEL011411",
+   "value": 7
+  },
+  {
+   "source": "AAEL013263",
+   "target": "AAEL012522",
+   "value": 1
+  },
+  {
+   "source": "AAEL011411",
+   "target": "AAEL012774",
+   "value": 7
+  },
+  {
+   "source": "AAEL012522",
+   "target": "AAEL011411",
+   "value": 1
+  },
+  {
+   "source": "AAEL013263",
+  
+   "target": "AAEL011411",
+
+   "value": 1
+  }
+];
+
+var nodes = {};
+// Compute the distinct nodes from the links.
+//var i = 0;
+//var nodes = {};
+var new_links=[]// create an empty array
+
+links.forEach(function(link) {
+if (link.value<=4){
+  new_links.push({
+    "source":   link.source,
+    "target": link.target,
+    "value": link.value
+  })}
+});
+//console.log(new_links);
+// Compute the distinct nodes from the links.
+new_links.forEach(function(link) {
+    //console.log(link.value)
+    //if(link.value<=7){
+    link.source = nodes[link.source] ||
+        (nodes[link.source] = {name: link.source});
+    link.target = nodes[link.target] ||
+        (nodes[link.target] = {name: link.target});
+      //}
+});
+//console.log(nodes)
+for (d in nodes) {
+  nodes[d].degree = 0;}
+new_links.forEach(function(link) {
+  //if (link.value<=7){
+  //  console.log(link.value)
+  //console.log(nodes[link.source.name])
+    nodes[link.source.name].degree += 1;
+    nodes[link.target.name].degree += 1;})
+var width = 800,
+    height = 700;
+var force = d3.forceSimulation()
+    .nodes(d3.values(nodes))
+    .force("link", d3.forceLink(new_links).distance(150))  // make this scaled?
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force("x", d3.forceX())
+    .force("y", d3.forceY())
+    .force("charge", d3.forceManyBody().strength(-300)) // make this scaled?
+    .alphaTarget(1)
+    .on("tick", tick);
+const tip = d3.tip()
+								.attr('class', 'd3-tip')
+								.direction('e')
+								.offset([30, 10])
+								.html(d=>'Hello!');
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+		.call(tip);
+// add the links and the arrows
+var path = svg.append("g")
+								.selectAll("path")
+								.data(new_links)
+							.enter()
+								.append("path")
+								.attr("class", function(d) { return "link " + d.type; });
+								//.style("stroke", "blue")
+								//.style("stroke-width", function(d) {
+								//		if (d.value == 1) return "2px"
+								//		else return "2px"})
+
+//I added it
+path.style("stroke", function (d) {if(d['value']<=2){return "red";} else {return "purple";}})
+  .style("stroke-width",function(d){if(d['value']<=2) {return "4px";} else{return "1px";}});
+// define the nodes
+var node = svg.selectAll(".node")
+    .data(force.nodes())
+  .enter().append("g")
+    .attr("class", "node")
+    .attr('id', d=>d.name)
+    .on('dblclick', function (d) {
+        let ellipse = d3.select(this)
+                       .select('ellipse')
+        if (d.fixed == true) {
+          unpinit(d);
+          ellipse.style('stroke', '#ccc');}
+        else {
+          pinit(d);
+          ellipse.style('stroke', 'blue');}})
+		.on('mouseover', tip.show)
+		.on('mouseout', tip.hide);
+	node.call(d3.drag()
+      .on("start", dragstarted)
+      .on("drag", dragged)
+      .on("end", dragended)
+      );
+var rScale = d3.scaleLinear()
+		.domain([0, 10])
+    .range([3,17]);
+// add the nodes
+node.append("ellipse")
+    .attr('rx', 30)
+    .attr('ry', 15)
+    .style('fill', '#ccc');
+node.append("text")
+   .text(function(d) { return d.name })
+   .attr('text-anchor', 'middle')
+// add the curvy lines
+function tick() {
+    path.attr("d", function(d) {
+        var dx = d.target.x - d.source.x,
+            dy = d.target.y - d.source.y,
+            dr = Math.sqrt(dx * dx + dy * dy);
+        return "M" +
+            d.source.x + "," +
+            d.source.y + "L" +
+            //dr + "," + dr + " 0 0,1 " +
+            d.target.x + "," +
+            d.target.y;
+    });
+    node
+        .attr("transform", function(d) {
+        return "translate(" + d.x + "," + d.y + ")"; })
+};
+function pinit(d){
+  d.fx = d.x;
+  d.fy = d.y;
+  d.fixed = true;
+}
+function unpinit(d){
+  d.fx = null;
+  d.fy = null;
+  d.fixed = false;
+}
+function dragstarted(d) {
+      if (!d3.event.active) force.alphaTarget(0.3).restart();
+      d.fx = d.x;
+      d.fy = d.y;
+    };
+function dragged(d) {
+  d.fx = d3.event.x;
+  d.fy = d3.event.y;
+};
+function dragended(d) {
+  if (!d3.event.active) force.alphaTarget(0);
+  if (d.fixed == true){
+     d.fx = d.x;
+     d.fy = d.y;
+  }
+  else{
+    d.fx = null;
+    d.fy = null;
+  }
+};
+</script>
+</body>
+</html>
