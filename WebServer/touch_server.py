@@ -1,5 +1,7 @@
 # import the nessecary pieces from Flask
 from flask import Flask,render_template, request,jsonify,Response
+import subprocess
+import pipe
 
 #Create the app object that will route our calls
 app = Flask(__name__)
@@ -12,8 +14,13 @@ def home():
 def contact():
 	print(request.method)
 	if request.method == 'POST':
-		if request.form['submit'] == 'submit':
-			print("hello it's working") # do something
+		if request.form.get('submit') == 'submit':
+			input_organism= request.form.get('organism')
+			input_gene= request.form.get('gene')
+			#subprocess.call(['echo', input_organism,input_gene])
+			#print("hello it's working")
+			return render_template('touch_home.html')
+			#print("hello it's working") # do something
 
 	elif request.method == 'GET':
 		return render_template('touch_home.html', form=form)
