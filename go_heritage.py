@@ -65,6 +65,14 @@ def build_ontologies(gene2go):
 #    open('test.tsv', 'w').write('\n'.join(response))
 
 ####### MANI EDIT BELOW #########
+    parent_to_term={}
+    dist=[]
+    for item in response:
+        tmp=item.strip("\n").strip(" ").split("\t")
+        parent_to_term[tmp[0]]= tmp[1]
+        if tmp[2]>0:
+            dist.append((tmp[0],tmp[2]))
+    print(dist)
     edge_list = []
     for gene, goIDs in gene2go.items():
         for go_id in goIDs:
