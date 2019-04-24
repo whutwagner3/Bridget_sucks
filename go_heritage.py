@@ -71,19 +71,20 @@ def build_ontologies(gene2go):
         tmp=item.strip("\n").strip(" ").split("\t")
         parent_to_term[tmp[0]]= tmp[1]
         if tmp[2]>0:
-            dist.append((tmp[0],tmp[2]))
-    print(dist)
-    edge_list = []
-    for gene, goIDs in gene2go.items():
-        for go_id in goIDs:
-            edge_list.append((gene, go_id))
-    goid2goterm = {}
-    for line in [x.split('\t') for x in response[1:]]:
-        add_entry(line[0], line[1], goid2goterm)
-        add_entry(line[2], line[3], goid2goterm)
-        if line[-1] == '0': continue
-        edge_list.append((line[4], line[2]))
-    return [edge_list, goid2goterm]
+            dist.append((tmp[0],tmp[2])) #tmp[0] is the parent id #tmp[2] is the distance
+    return [parent_to_term,dist]
+    #print(dist)
+    #edge_list = []
+    #for gene, goIDs in gene2go.items():
+    #    for go_id in goIDs:
+    #        edge_list.append((gene, go_id))
+    #goid2goterm = {}
+    #for line in [x.split('\t') for x in response[1:]]:
+    #    add_entry(line[0], line[1], goid2goterm)
+    #    add_entry(line[2], line[3], goid2goterm)
+    #    if line[-1] == '0': continue
+    #    edge_list.append((line[4], line[2]))
+    #return [edge_list, goid2goterm]
 
 # %%
 if __name__ == '__main__':
