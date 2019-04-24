@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+</head>
+<style>
+
+</style>
+<body>
+  <h1> Property of Bridgey Sucks Enterprise </h1>
+  
+  <select id = "organism">
+      <option value="aalbimanus_eg_gene">aalbimanus_eg_gene</option>
+      <option value="aalbopictus_eg_gene">aalbopictus_eg_gene</option>
+      <option value="aarabiensis_eg_gene">aarabiensis_eg_gene</option>
+      <option value="aatroparvus_eg_gene">aatroparvus_eg_gene</option>
+      <option value="achina_eg_gene">achina_eg_gene</option>
+      <option value="achristyi_eg_gene">achristyi_eg_gene</option>
+      <option value="acoluzzii_eg_gene">acoluzzii_eg_gene</option>
+      <option value="aculicifacies_eg_gene">aculicifacies_eg_gene</option>
+      <option value="adarlingi_eg_gene">adarlingi_eg_gene</option>
+      <option value="adirus_eg_gene">adirus_eg_gene</option>
+      <option value="aepiroticus_eg_gene">aepiroticus_eg_gene</option>
+      <option value="afarauti_eg_gene">afarauti_eg_gene</option>
+      <option value="afunestus_eg_gene">afunestus_eg_gene</option>
+      <option value="agambiae_eg_gene">agambiae_eg_gene</option>
+      <option value="aindian_eg_gene">aindian_eg_gene</option>
+      <option value="alvpagwg_eg_gene">alvpagwg_eg_gene</option>
+      <option value="amaculatus_eg_gene">amaculatus_eg_gene</option>
+      <option value="amelas_eg_gene">amelas_eg_gene</option>
+      <option value="amerus_eg_gene">amerus_eg_gene</option>
+      <option value="aminimus_eg_gene">aminimus_eg_gene</option>
+      <option value="aquadriannulatus_eg_gene">aquadriannulatus_eg_gene</option>
+      <option value="asinensis_eg_gene">asinensis_eg_gene</option>
+      <option value="astephensi_eg_gene">astephensi_eg_gene</option>
+      <option value="bglabrata_eg_gene">bglabrata_eg_gene</option>
+      <option value="clectularius_eg_gene">clectularius_eg_gene</option>
+      <option value="cquinquefasciatus_eg_gene">cquinquefasciatus_eg_gene</option>
+      <option value="gausteni_eg_gene">gausteni_eg_gene</option>
+      <option value="gbrevipalpis_eg_gene">gbrevipalpis_eg_gene</option>
+      <option value="gfuscipes_eg_gene">gfuscipes_eg_gene</option>
+      <option value="gmorsitans_eg_gene">gmorsitans_eg_gene</option>
+      <option value="gpallidipes_eg_gene">gpallidipes_eg_gene</option>
+      <option value="gpalpalis_eg_gene">gpalpalis_eg_gene</option>
+      <option value="iscapularis_eg_gene">iscapularis_eg_gene</option>
+      <option value="llongipalpis_eg_gene">llongipalpis_eg_gene</option>
+      <option value="mdomestica_eg_gene">mdomestica_eg_gene</option>
+      <option value="phumanus_eg_gene">phumanus_eg_gene</option>
+      <option value="ppapatasi_eg_gene">ppapatasi_eg_gene</option>
+      <option value="rprolixus_eg_gene">rprolixus_eg_gene</option>
+      <option value="scalcitrans_eg_gene">scalcitrans_eg_gene</option>
+      <option value="sscabiei_eg_gene">sscabiei_eg_gene</option>
+
+</select>
+<label for="organism">Databases</label>
+
+
+<br>
+
+<input id="genes" type="text" name="geneList" value="AAEL003439, AAEL011411, AAEL012522, AAEL012774, AAEL012864, AAEL013263" >
+<label for="genes">Enter Ensembl Gene IDs (make sure they are present in your species) </label>
+
+<br><br>
+
+<button type = "button" onclick = "makegraph()">Do some fancy shit</button>
+
+<script type="text/javascript" src="../d3.v5.min.js" charset="utf-8"></script>
+<script>
+
+
+
+var makegraph = function(){
+    
+    console.log(organism.value)
+    console.log(genes.value)
+}
+
+
+</script>
+</body>
+<html>
