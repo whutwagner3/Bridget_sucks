@@ -1,5 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Apr 22 06:14:39 2019
+
+@author: bnmon
+"""
+
 import pandas as pd
-import sys
+import json
+from itertools import product
 """The below script is an implementation of floyd's algorithm
 Input: A edge list with each line representing (child node tab parent node) as geberated from biomart
 Output:It provides number of nodes between any two gene pairs as distance
@@ -21,7 +29,7 @@ def Create_Adjacency_Matrix(fil):
     for i in prot:
         lst_x.append(i[0])
         lst_x.append(i[1])
-        
+
     lst_xy=[]
     for i in lst_x:
         if i not in lst_xy:
@@ -61,16 +69,16 @@ def main_2(file):
         for j in range(0,len(lst_x_y)):
             if i!=j and a_mat[i][j]!=1:
                 a_mat[i][j]=10000
-                
+
     next_1=['NA']*len(lst_x_y)
     for j in range(0,len(lst_x_y)):
         next_1[j]=['NA']*(len(lst_x_y))
- 
+
     for i in range(0,len(lst_x_y)):
         for j in range(0,len(lst_x_y)):
             if a_mat[i][j]!=1000 and a_mat[i][j]!=0:
                 next_1[i][j]=j
-            
+
     for k in range(0,len(lst_x_y)):
         for i in range(0,len(lst_x_y)):
             for j in range(0,len(lst_x_y)):
@@ -109,16 +117,14 @@ def also_an_edge_list_apparently(df):
     nodes_list = df.index.to_list()
     edges = pd.DataFrame(set([frozenset([x, y]) for x, y in product(nodes_list,
                               nodes_list) if x != y]))
-    links = list(edges.apply(lambda row: {'source': {'name': row[0]},
-                                          'target': {'name': row[1]},
+    links = list(edges.apply(lambda row: {'source': row[0],
+                                          'target': row[1],
                                           'value': int(df.loc[row[0], row[1]])},
                                             axis=1))
-    nodes = {x:{'name': x} for x in nodes_list}
-    json_obj = json.dumps({'nodes': nodes, 'links': links}, indent=1)
-    with open('json_graph.json', 'w') as f:
-        f.write('const graph = ' + json_obj)
+    json_obj = json.dumps(links, indent=1)
+    with open('json_graph11.json', 'w') as f:
+        f.write('const links = ' + json_obj)
+    pass
 
 if __name__=="__main__":
-    dist = main_2('edge_list.txt')
-
-
+    dist = main_2("edge_list.txt")
