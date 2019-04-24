@@ -8,3 +8,9 @@ import tempfile
 import subprocess
 import base64
 
+app = Flask(__name__)
+
+@app.route('/')
+@app.route('/index')
+def index():
+  
