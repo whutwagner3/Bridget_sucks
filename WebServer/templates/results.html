@@ -51,14 +51,33 @@ text {
   </form>
 <script>
 // get the data
-// THIS SHOULD WORK. I GIVE UP.
 // files = [d3.json('../static/genealogy.json'), d3.json('../static/links.json')];
 files = [d3.json('genealogy.json'), d3.json('links.json')];
 
-Promise.all(files).then(do_the_stuff, function(){console.log('rejected');});
+Promise.all(files).then(do_the_stuff).catch(error => { console.log(error.message) });
+// THIS SHOULD WORK. I GIVE UP.
+// notes on troubleshooting:
+	// gives the error message "Failed to fetch." Great, thanks.
+	// Reading JSON through promises requires true JSON files (not technically JS files as before) so I reformatted
+		// but now they need to be in two files I think because they are two different objects
+		// Unless I just made them one object???
+		// But I still don't think that would fix the problem.
+	// I have almost identical script working for the hw2q6:
+		// files = [ d3.json('us.json'), 	// SEE???? IT WORKS HERE THE SAME SYNTAX D<
+		// 	d3.csv('county_poverty.csv', d=>{data transformation specific to csv}), 
+		// 	d3.csv('county_detail.csv', d=>{data transformation specific to csv}) ]
+		// Promise.all(files).then(run_the_rest_of_the_program_like_a_normal_language_you_piece_of_garbage_the_files_are_local, function(){console.log('no')})
+		// function run_the_rest_of_the_program_like_a_normal_language_you_piece_of_garbage_the_files_are_local([us, i_hate_javascript, promises_are_garbage]){
+		// 	// the literal rest of the script
+		// }
+	// I have validated the JSON files
+	// I have tested with just one file or the other, neither works (and we need both at once to call the function)
+	// I think my function name from the homework says it all
+	// Speaking of local files, I have no idea why this isn't working, but there are a million other ways to do it
+		// but they all require a URL or fancy other stuff and I don't know how to use the server
+		// this is the primary reason I am leaving it to someone else to do
 
 function do_the_stuff([genealogy, links]){
-
 
 var nodes = {};
 // Compute the distinct nodes from the links.
