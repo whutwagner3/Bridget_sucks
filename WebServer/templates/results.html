@@ -51,9 +51,13 @@ text {
   </form>
 <script>
 // get the data
-d3.json("./static/graph_json_vars.json", function(data){
-// stuff
-}):
+// THIS SHOULD WORK. I GIVE UP.
+// files = [d3.json('../static/genealogy.json'), d3.json('../static/links.json')];
+files = [d3.json('genealogy.json'), d3.json('links.json')];
+
+Promise.all(files).then(do_the_stuff, function(){console.log('rejected');});
+
+function do_the_stuff([genealogy, links]){
 
 
 var nodes = {};
@@ -207,6 +211,7 @@ function dragended(d) {
     d.fy = null;
   }
 };
+}
 </script>
 </body>
 </html>
