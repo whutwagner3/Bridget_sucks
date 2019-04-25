@@ -2,6 +2,7 @@
 from flask import Flask,render_template, request,jsonify,Response
 import subprocess
 import re
+import webbrowser
 
 #Create the app object that will route our calls
 app = Flask(__name__)
@@ -37,4 +38,5 @@ def results():
 
 #When run from command line, start the server
 if __name__ == '__main__':
+    webbrowser.open_new('http://0.0.0.0:3333/')
     app.run(host ='0.0.0.0', port = 3333, debug = True)
