@@ -3,13 +3,36 @@ var svg = d3.select('svg');
 var svgWidth = +svg.attr('width');
 var svgHeight = +svg.attr('height');
 
-var padding = {t: 0, r: 0, b: 0, l: 0};
+var padding = {
+	t: 40, 
+	r: 10, 
+	b: 70, 
+	l: 20
+};
+
+var chartPadding = {
+	t: 0, 
+	r: 0, 
+	b: 0, 
+	l: 40
+};
 
 var svgAvailableWidth = svgWidth - padding.l - padding.r;
 var svgAvailableHeight = svgHeight - padding.t - padding.b;
 
-var chartWidth = svgAvailableWidth * 0.8;
-var chartHeight = svgAvailableHeight * 0.8;
+var chartWidth = svgAvailableWidth * 0.5;
+var chartHeight = svgAvailableHeight;
+
+var chartAvailableWidth = chartWidth - chartPadding.l - chartPadding.t;
+var chartAvailableHeight = chartHeight - chartPadding.t - chartPadding.b;
+
+var selectionChart = svg.append('g')
+	.attr('class', 'chart')
+	.attr('transform', 'translate('+[padding.l, padding.t]+')');
+
+var backgroundChart = svg.append('g')
+	.attr('class', 'chart')
+	.attr('transform', 'translate('+[padding.l+chartWidth, padding.t]+')');
 
 function getRandomColor() {
 	var choices = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
@@ -63,129 +86,179 @@ d3.csv('insecticide-resistance.csv',
 			console.error(error);
 			return;			
 		}		
-					
-		// We might not need to use this for now
-		var background = dataset.filter(function(d) {
-			return d.measurementType == "mortality rate (percent)" && d.phenotypeValue <= 100.0;
-		});
 		
 		var byLocation = dataset.filter(function(d) {
 			return d.locations == "Jamaica"; // hardcoded for our demo
 		});
 		
-		var insecticides = d3.map(byLocation, function(d) {
-			return d.insecticide;
-		}).keys().sort();
-		
-		var subsets = [];
-		
-		insecticides.forEach(function(insecticide) {
-			var byInsecticide = byLocation.filter(function(d) {
-				return d.insecticide == insecticide;
-			});
-			subsets.push({
-				insecticideType: insecticide,
-				color: getRandomColor(),
-				subset: byInsecticide
-			});
+		var background = dataset.filter(function(d) {
+			return d.measurementType == "mortality rate (percent)" && d.phenotypeValue <= 100.0;
 		});
 		
-		// Subsets where location == "Jamaica" and possible insecticides == "malathion" or "permethrin"
+		createChart(byLocation, selectionChart, true, true);
+		createChart(background, backgroundChart, true, false);		
 		
-		// Attempt to draw a plot
-		
-		// x-axis = frequency
-		// y-axis = mortality rate (percent)
-		
-		// create scales
-		var xScale = d3.scaleLinear()
-			.domain([0, 1]) // 0% to 100% of selected samples
-			.range([0, chartWidth / 2]);
-			
-		var yExtent = d3.extent(byLocation, function(d) {
-			return d.phenotypeValue;
-		})
-			
-		var yScale = d3.scaleLinear()
-			.domain(yExtent) // min/max mortality rate
-			.range([chartHeight, 0]);
-			
-			
-		var xTranslate = 40;
-		var yTranslate = 10;
-			
-		var xAxisX = 0 + xTranslate;
-		var xAxisY = chartHeight + yTranslate;
-		
-		var yAxisX = 0 + xTranslate;
-		var yAxisY = 0 + yTranslate;
-		
-		// plots for each subset
-		for (var i = 0; i < subsets.length; i++) {
-			var subset = subsets[i];
-			var subsetData = subset['subset'];
-			
-			// create histogram bins		
-			var bins = [[], [], [], [], [], [], [], [], [], []];
-			
-			subsetData.forEach(function(d) {
-				for (var j = 0; j < 10; j++) {
-					if (d.phenotypeValue >= (j * 10) && d.phenotypeValue < ((j+1) * 10)) {
-						bins[j].push(d);
-					}
-				}
-				if (d.phenotypeValue >= 100) {
-					bins[9].push(d);
-				}
-			});
-			
-			var subsetPlotG = svg.append('g')
-				.attr('class', 'subset-plot')
-				.attr('transform', 'translate(' + [padding.l, padding.t] + ')');
-			
-			// ~~~~~~~~~~~~~~~~~~~~ scatterplot to debug ~~~~~~~~~~~~~~~~~~~~
-			subsetPlotG.selectAll('.data-case')
-				.data(subsetData)
-				.enter()
-				.append('circle')
-				.attr('class', 'data-case')
-				.attr('r', function(d) {
-					return 5;
-				})
-				.attr('cx', function(d) {
-					var xValue = 0;
-
-					for (var j = 0; j < bins.length; j++) {
-						var bin = bins[i];
-						for (var k = 0; k < bin.length; k++) {
-							if (bin[k].sampleId == d.sampleId) {
-								xValue = (bin.length * 1.0) / subsetData.length;
-							}
-						}
-					}
-
-					return xTranslate + xScale(xValue);
-				})
-				.attr('cy', function(d) {
-					return yTranslate + yScale(d.phenotypeValue);
-				})
-				.style('fill', function(d) {
-					return subset['color'];
-				});
-			// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-		}
-			
-		// create axes
-		svg.append('g')
-			.attr('class', 'x axis')
-			.attr('transform', 'translate(' + [xAxisX, xAxisY] + ')')
-			.call(d3.axisBottom(xScale).ticks(5));
-			
-		// create axes
-		svg.append('g')
-			.attr('class', 'y axis')
-			.attr('transform', 'translate(' + [yAxisX, yAxisY] + ')')
-			.call(d3.axisLeft(yScale));
+		// Append labels
+		var title = svg.append('text')
+			.attr('class', 'title')
+			.attr('x', svgAvailableWidth * 0.4)
+			.attr('y', padding.t * 0.5)
+			.text("mortality rate (percent)");
 	});
 	
+function createChart(dataset, group, showAxes, isBackground) {
+	
+	var insecticides = d3.map(dataset, function(d) {
+		return d.insecticide;
+	}).keys().sort();
+	
+	var subsets = [];
+		
+	insecticides.forEach(function(insecticide) {
+		var byInsecticide = dataset.filter(function(d) {
+			return d.insecticide == insecticide;
+		});
+		subsets.push({
+			insecticideType: insecticide,
+			color: getRandomColor(),
+			subset: byInsecticide
+		});
+	});	
+	
+	// x-axis = frequency
+	// y-axis = mortality rate (percent)	
+	
+	// create scales
+	var xScale = d3.scaleLinear()
+		.domain([0, 1]) // 0% to 100% of selected samples
+		.range([0, chartAvailableWidth]);
+		
+	var yExtent = d3.extent(dataset, function(d) {
+		return d.phenotypeValue;
+	})
+		
+	var yScale = d3.scaleLinear()
+		.domain(yExtent) // min/max mortality rate
+		.range([chartAvailableHeight, 0]);
+		
+	var xAxisX = chartPadding.l;
+	var xAxisY = chartHeight - chartPadding.b;
+	
+	var yAxisX = chartPadding.l;
+	var yAxisY = chartPadding.t;
+	
+	var histogramBins = 10;
+	var histogramThresholds = [];
+	
+	var histMin = yScale.domain()[0];
+	var histMax = yScale.domain()[1];
+	var histStep = (histMax - histMin) / histogramBins;
+	
+	for (var thresh = histMin + histStep; thresh <= histMax; thresh = thresh + histStep) {
+		histogramThresholds.push(thresh);
+	}
+	
+	var histogram = d3.histogram()
+		.value(function(d) {
+			return d.phenotypeValue;
+		})
+		.domain(yScale.domain()) // 0% to 100% of selected samples
+		.thresholds(histogramThresholds);
+		
+	// overlapping area plots for each subset
+	for (var i = 0; i < subsets.length; i++) {
+		var subset = subsets[i];
+		var subsetData = subset['subset'];
+		
+		var bins = histogram(subsetData);
+		
+		var subsetPlotG = group.append('g')
+			.attr('class', 'subset-plot')
+			.attr('transform', 'translate(' + [chartPadding.l, chartPadding.t] + ')');			
+		
+		var area_ = d3.area()
+			.x0(function(d) {
+				return 0; // chartPadding.l;
+			})
+			.x1(function(d) {
+				return xScale(d.length / subsetData.length);
+			})
+			.y(function(d) {
+				return yScale(d.x0);
+			})
+			.curve(d3.curveMonotoneY);
+			
+		var line_ = d3.line()
+			.x(function(d) {
+				return xScale(d.length / subsetData.length);
+			})
+			.y(function(d) {
+				return yScale(d.x0);
+			})
+			.curve(d3.curveMonotoneY);			
+		
+		var areaPlot = subsetPlotG.append('path')
+			.data([bins])
+			.attr('class', 'area-plot')
+			.attr('fill', subset['color'])
+			.attr('stroke', 'none')
+			.attr('d', area_)
+			.on('mouseover', function(d) {
+				var hovered = d3.select(this);
+				hovered.attr('class', 'area-plot-hovered');
+			})
+			.on('mouseout', function(d) {
+				var hovered = d3.select(this);
+				hovered.attr('class', 'area-plot');
+			});
+			
+		var linePlot = subsetPlotG.append('path')
+			.data([bins])
+			.attr('class', 'line-plot')
+			.attr('fill', 'none')
+			.attr('stroke-width', '3')
+			.attr('d', line_)
+			.on('mouseover', function(d) {
+				var hovered = d3.select(this);
+				hovered.attr('class', 'line-plot-hovered');
+			})
+			.on('mouseout', function(d) {
+				var hovered = d3.select(this);
+				hovered.attr('class', 'line-plot');
+			});
+			
+		areaPlot.data(subsetData);
+		linePlot.data(subsetData);	
+
+		if (showAxes) {
+			group.append('g')
+				.attr('class', 'x axis')
+				.attr('transform', 'translate(' + [chartPadding.l, chartPadding.t + chartAvailableHeight] + ')')
+				.call(d3.axisBottom(xScale).ticks(5));
+				
+			group.append('g')
+				.attr('class', 'y axis')
+				.attr('transform', 'translate('+[chartPadding.l, chartPadding.t]+')')
+				.call(d3.axisLeft(yScale));				
+		}
+		
+		// Append labels
+		var label = group.append('text')
+			.attr('class', 'axis-label')
+			.attr('x', chartAvailableWidth * 0.3)
+			.attr('y', svgHeight - padding.b)
+			.text(function() {
+				var txt = "";
+				if (isBackground) {
+					txt += "Background";
+				} else {
+					txt += "Selection";
+				}
+				txt += " (n=" + dataset.length + ")";
+				return txt;
+			});
+		
+	}
+}
+		
 	

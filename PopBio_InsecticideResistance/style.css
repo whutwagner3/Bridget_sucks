@@ -1,6 +1,55 @@
-.data-case {
-    fill-opacity: 0.4;
-    stroke: #fff;
+.line-plot {
+    fill-opacity: 0.6;
+    stroke: #ffffff;
     stroke-width: 0.5;
 	stroke-opacity: 0.6;	
+}
+
+.line-plot-hovered {
+    fill-opacity: 1.0;
+    stroke: #ffffff;
+    stroke-width: 1.0;
+	stroke-opacity: 1.0;		
+}
+
+.area-plot {
+    fill-opacity: 0.6;
+    stroke: none;
+}
+
+.area-plot-hovered {
+    fill-opacity: 1.0;
+    stroke: none;			
+}
+
+/* Tooltip styling borrowed from https://rawgit.com/Caged/d3-tip/master/examples/example-styles.css */
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+  pointer-events: none;	
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Eastward tooltips */
+.d3-tip.e:after {
+  content: "\25C0";
+  margin: -4px 0 0 0;
+  top: 50%;
+  left: -8px;
 }
