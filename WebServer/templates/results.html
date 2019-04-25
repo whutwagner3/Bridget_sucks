@@ -52,7 +52,7 @@ text {
 <script>
 // get the data
 // files = [d3.json('../static/genealogy.json'), d3.json('../static/links.json')];
-files = [d3.json('genealogy.json'), d3.json('links.json')];
+files = [d3.json('./static/genealogy.json'), d3.json('./static/links.json')];
 
 Promise.all(files).then(do_the_stuff).catch(error => { console.log(error.message) });
 // THIS SHOULD WORK. I GIVE UP.
