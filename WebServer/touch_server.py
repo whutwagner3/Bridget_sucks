@@ -1,7 +1,6 @@
 # import the nessecary pieces from Flask
 from flask import Flask,render_template, request,jsonify,Response
 import subprocess
-import pipe
 
 #Create the app object that will route our calls
 app = Flask(__name__)
@@ -11,48 +10,27 @@ def home():
 	return render_template('touch_home.html')
 
 @app.route('/', methods=['GET','POST']) 
-def contact():
-	print(request.method)
+def contact1():
+	
 	if request.method == 'POST':
 		if request.form.get('submit') == 'submit':
 			input_organism= request.form.get('organism')
 			input_gene= request.form.get('gene')
 			#subprocess.call(['echo', input_organism,input_gene])
-			#print("hello it's working")
-			return render_template('touch_home.html')
-			#print("hello it's working") # do something
+			
+			return render_template('results.html')
+			
 
 	elif request.method == 'GET':
-		return render_template('touch_home.html', form=form)
+		return render_template('touch_home.html')
 
-"""def home():
-    return render_template('touch_home.html')
+@app.route('/results', methods=['GET', 'POST'])
+def contact2():
+	if request.method == 'POST':
+		if request.form.get('home') == 'home':
+			return render_template('touch_home.html')
+			
 
-@app.route('/', methods=['POST'])
-def my_form_post():
-    text = request.form['text']
-    processed_text = text.upper()
-    return processed_text"""
-# Add a single endpoint that we can use for testing
-"""@app.route('/', methods = ['GET', 'POST'])
-def home():
-    #return '<h1> Hello World </h1><p>My name is Mani</p>'
-    return render_template('touch_home.html')
-
-@app.route('/parse_data', methods=['GET', 'POST'])
-def parse_data(data):
-    if request.method == "POST":
-         #perform action here
-         var value = $('.textbox').val();
-		$.ajax({
-  		type: 'POST',
-  		url: "{{ url_for('parse_data') }}",
-  		data: JSON.stringify(value),
-  		contentType: 'application/json',
-  		success: function(data){
-  	  // do something with the received data
-  }
-});"""
 
 #When run from command line, start the server
 if __name__ == '__main__':
