@@ -17,7 +17,7 @@ def contact1():
 		if request.form.get('submit') == 'submit':
 			input_organism= re.sub(r"\s+","",request.form.get('organism'))
 			input_gene= request.form.get('gene')
-			subprocess.call(['echo', input_organism,input_gene])
+			#subprocess.call(['python3', 'gene_clumper.py', input_organism, input_gene])
 			
 			return render_template('results.html')
 			
