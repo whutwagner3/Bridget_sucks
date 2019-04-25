@@ -76,6 +76,10 @@ Promise.all(files).then(do_the_stuff).catch(error => { console.log(error.message
 	// Speaking of local files, I have no idea why this isn't working, but there are a million other ways to do it
 		// but they all require a URL or fancy other stuff and I don't know how to use the server
 		// this is the primary reason I am leaving it to someone else to do
+		// https://stackoverflow.com/questions/52528018/how-to-properly-load-local-json-in-d3
+			// this and others seem to indicate that the error I'm getting might be avoided on a web server
+		// But if it's my browser disallowing local file access, then why does the hw code work?!?!?!
+		// But hopefully it is that simple.
 
 function do_the_stuff([genealogy, links]){
 
