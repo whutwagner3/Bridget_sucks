@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<script src="../lib/d3.v5.min.js"></script>
-<script src="../lib/d3-tip.min.js"></script>
+<script src="./lib/d3.v5.min.js"></script>
+<script src="./lib/d3-tip.min.js"></script>
 <style>
 path.link {
   fill: none;
@@ -29,6 +29,16 @@ text {
 			padding: 4px;
 			border-radius: 6px;
 			}
+.ring {
+  fill: none;
+  stroke: #000;
+  pointer-events: none;
+}
+
+.ring-inner {
+  stroke-width: 5px;
+  stroke-opacity: .25;
+}
 	
 </style>
 <body>

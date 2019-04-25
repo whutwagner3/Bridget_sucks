@@ -8,6 +8,7 @@ import biomart
 import json
 import sys
 import time
+import re
 
 def main(gene_ids='', organism='Aedes aegypti (LVP_AGWG) genes (AaegL5.2)'):
     if gene_ids == '':
@@ -19,7 +20,8 @@ def main(gene_ids='', organism='Aedes aegypti (LVP_AGWG) genes (AaegL5.2)'):
         
 #        # 11 genes (6 with GO terms) 
 #        gene_ids = ['AAEL003318', 'AAEL006381', 'AAEL010338', 'AAEL010398', 'AAEL011756', 'AAEL022994', 'AAEL023879', 'AAEL026304', 'AAEL026602', 'AAEL027637', 'AAEL027839']
-    
+    else:
+        gene_ids = re.split(',', gene_ids)
     dataset = species2dataset()[organism]
     gene2go_list = get_go(gene_ids, dataset)
     distances, base2gene, genealogy = build_ontologies(gene2go_list)
@@ -43,7 +45,7 @@ def main(gene_ids='', organism='Aedes aegypti (LVP_AGWG) genes (AaegL5.2)'):
                                    'target': tgt,
                                    'value': value})
 
-    with open('graph_json_vars.json', 'w') as f: 
+    with open('./WebServer/static/graph_json_vars.json', 'w') as f:
         f.write('const genealogy = ' + json.dumps(real_genealogy, indent=2) + '\n')
         f.write('const graph = ' + json.dumps(real_edges, indent=2) + '\n')
 
