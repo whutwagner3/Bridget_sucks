@@ -21,7 +21,8 @@ def main(gene_ids='', organism='Aedes aegypti (LVP_AGWG) genes (AaegL5.2)'):
 #        # 11 genes (6 with GO terms) 
 #        gene_ids = ['AAEL003318', 'AAEL006381', 'AAEL010338', 'AAEL010398', 'AAEL011756', 'AAEL022994', 'AAEL023879', 'AAEL026304', 'AAEL026602', 'AAEL027637', 'AAEL027839']
     else:
-        gene_ids = re.split(',', gene_ids)
+        try: gene_ids = gene_ids.split(',')
+        except AttributeError: pass
     dataset = species2dataset()[organism]
     gene2go_list = get_go(gene_ids, dataset)
     distances, base2gene, genealogy = build_ontologies(gene2go_list)
