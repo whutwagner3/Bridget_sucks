@@ -7,9 +7,11 @@
 <style>
 </style>
 <body>
-  <h1> Property of Bridgey Sucks Enterprise </h1>
-  <form method="post" action="/">
-
+  <h1 style="background-color:rgb(245, 255, 255);"> Property of Bridgey Sucks Enterprise </h1>
+    <br><br>
+  <form method="post" action="/" align="center" style="font-family:verdana">
+      <br><br>
+    <label for="organism">Databases</label><br>
   <select id = "organism" name = "organism">
     <option value="Aedes aegypti (LVP_AGWG) genes (AaegL5.2)">Aedes aegypti (LVP_AGWG) genes (AaegL5.2)</option>
       <option value="Aedes albopictus genes (AaloF1.2)">Aedes albopictus genes (AaloF1.2)</option>
@@ -54,15 +56,15 @@
       <option value="Stomoxys calcitrans genes (ScalU1.5)">Stomoxys calcitrans genes (ScalU1.5)</option>
 
 </select>
-<label for="organism">Databases</label>
 
 
-<br>
-
-<input id="genes" type="text" name="gene" value="AAEL003439,AAEL011411,AAEL012522,AAEL012774,AAEL012864,AAEL013263" >
-<label for="genes">Enter Ensembl Gene IDs as comma separated variables (make sure they are present in your species) </label>
 
 <br><br>
+<label for="genes">Enter Ensembl Gene IDs as comma separated variables (make sure they are present in your species) </label><br>
+<input id="genes" type="text" name="gene" value="AAEL003439,AAEL011411,AAEL012522,AAEL012774,AAEL012864,AAEL013263" >
+
+
+<br><br><br>
 
 <input type = "submit" value="submit" name="submit"> 
 
