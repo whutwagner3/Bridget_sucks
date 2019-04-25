@@ -15,9 +15,10 @@ def contact1():
 	
 	if request.method == 'POST':
 		if request.form.get('submit') == 'submit':
-			input_organism= re.sub(r"\s+","",request.form.get('organism'))
-			input_gene= request.form.get('gene')
-			#subprocess.call(['python3', 'gene_clumper.py', input_organism, input_gene])
+			subprocess.call(['rm','-f','graph_json_vars.json'])
+			input_gene= re.sub(r"\s+","",request.form.get('gene'))
+			input_organism= request.form.get('organism')
+			subprocess.call(['python3', 'gene_clumper.py', input_gene, input_organism])
 			
 			return render_template('results.html')
 			
