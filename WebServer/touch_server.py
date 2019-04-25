@@ -1,6 +1,7 @@
 # import the nessecary pieces from Flask
 from flask import Flask,render_template, request,jsonify,Response
 import subprocess
+import re
 
 #Create the app object that will route our calls
 app = Flask(__name__)
@@ -14,9 +15,9 @@ def contact1():
 	
 	if request.method == 'POST':
 		if request.form.get('submit') == 'submit':
-			input_organism= request.form.get('organism')
+			input_organism= re.sub(r"\s+","",request.form.get('organism'))
 			input_gene= request.form.get('gene')
-			#subprocess.call(['echo', input_organism,input_gene])
+			subprocess.call(['echo', input_organism,input_gene])
 			
 			return render_template('results.html')
 			
