@@ -26,8 +26,9 @@ def contact1():
 		return render_template('touch_home.html')
 
 @app.route('/results', methods=['GET', 'POST'])
-def contact2():
+def results():
 	if request.method == 'POST':
+		#print("hello")
 		if request.form.get('home') == 'home':
 			return render_template('touch_home.html')
 			
