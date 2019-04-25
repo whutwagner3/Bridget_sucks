@@ -1,0 +1,8537 @@
+const genealogy = {
+ "GO:0004756": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0016301",
+   "Term": "kinase activity"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0016781",
+   "Term": "phosphotransferase activity, paired acceptors"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0016772",
+   "Term": "transferase activity, transferring phosphorus-containing groups"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0016772",
+   "Term": "transferase activity, transferring phosphorus-containing groups"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0016740",
+   "Term": "transferase activity"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0003824",
+   "Term": "catalytic activity"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0004767": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0004620",
+   "Term": "phospholipase activity"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0008081",
+   "Term": "phosphoric diester hydrolase activity"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0016298",
+   "Term": "lipase activity"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0042578",
+   "Term": "phosphoric ester hydrolase activity"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0016788",
+   "Term": "hydrolase activity, acting on ester bonds"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0016788",
+   "Term": "hydrolase activity, acting on ester bonds"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0016787",
+   "Term": "hydrolase activity"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0003824",
+   "Term": "catalytic activity"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0005215": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0005507": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0046914",
+   "Term": "transition metal ion binding"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0046872",
+   "Term": "metal ion binding"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0043169",
+   "Term": "cation binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0043167",
+   "Term": "ion binding"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0005488",
+   "Term": "binding"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0005524": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0008144",
+   "Term": "drug binding"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0032550",
+   "Term": "purine ribonucleoside binding"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0032559",
+   "Term": "adenyl ribonucleotide binding"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0035639",
+   "Term": "purine ribonucleoside triphosphate binding"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0005488",
+   "Term": "binding"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0001883",
+   "Term": "purine nucleoside binding"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0032549",
+   "Term": "ribonucleoside binding"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0030554",
+   "Term": "adenyl nucleotide binding"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0032555",
+   "Term": "purine ribonucleotide binding"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0043168",
+   "Term": "anion binding"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:1901265",
+   "Term": "nucleoside phosphate binding"
+  },
+  {
+   "Distance": 8,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0001882",
+   "Term": "nucleoside binding"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0001882",
+   "Term": "nucleoside binding"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0017076",
+   "Term": "purine nucleotide binding"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0017076",
+   "Term": "purine nucleotide binding"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0032553",
+   "Term": "ribonucleotide binding"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0043167",
+   "Term": "ion binding"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0097159",
+   "Term": "organic cyclic compound binding"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:1901363",
+   "Term": "heterocyclic compound binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0036094",
+   "Term": "small molecule binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0097159",
+   "Term": "organic cyclic compound binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0097367",
+   "Term": "carbohydrate derivative binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:1901363",
+   "Term": "heterocyclic compound binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0000166",
+   "Term": "nucleotide binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0000166",
+   "Term": "nucleotide binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0097367",
+   "Term": "carbohydrate derivative binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0005488",
+   "Term": "binding"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0005488",
+   "Term": "binding"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0005488",
+   "Term": "binding"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0005488",
+   "Term": "binding"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0005488",
+   "Term": "binding"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0036094",
+   "Term": "small molecule binding"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:1901265",
+   "Term": "nucleoside phosphate binding"
+  }
+ ],
+ "GO:0005789": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0016020",
+   "Term": "membrane"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0042175",
+   "Term": "nuclear outer membrane-endoplasmic reticulum membrane network"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0044425",
+   "Term": "membrane part"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0044432",
+   "Term": "endoplasmic reticulum part"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0098827",
+   "Term": "endoplasmic reticulum subcompartment"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0012505",
+   "Term": "endomembrane system"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0016020",
+   "Term": "membrane"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0044464",
+   "Term": "cell part"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0016020",
+   "Term": "membrane"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0005783",
+   "Term": "endoplasmic reticulum"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0044444",
+   "Term": "cytoplasmic part"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0044446",
+   "Term": "intracellular organelle part"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0005783",
+   "Term": "endoplasmic reticulum"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0044444",
+   "Term": "cytoplasmic part"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0044446",
+   "Term": "intracellular organelle part"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0031984",
+   "Term": "organelle subcompartment"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0044432",
+   "Term": "endoplasmic reticulum part"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0044464",
+   "Term": "cell part"
+  },
+  {
+   "Distance": 9,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 9,
+   "ParentID": "GO:0005623",
+   "Term": "cell"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0044464",
+   "Term": "cell part"
+  },
+  {
+   "Distance": 8,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 8,
+   "ParentID": "GO:0005623",
+   "Term": "cell"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0012505",
+   "Term": "endomembrane system"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0043231",
+   "Term": "intracellular membrane-bounded organelle"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0044444",
+   "Term": "cytoplasmic part"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0005737",
+   "Term": "cytoplasm"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0044424",
+   "Term": "intracellular part"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0043229",
+   "Term": "intracellular organelle"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0044422",
+   "Term": "organelle part"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0044424",
+   "Term": "intracellular part"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0012505",
+   "Term": "endomembrane system"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0043231",
+   "Term": "intracellular membrane-bounded organelle"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0044444",
+   "Term": "cytoplasmic part"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0005737",
+   "Term": "cytoplasm"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0044424",
+   "Term": "intracellular part"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0043229",
+   "Term": "intracellular organelle"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0044422",
+   "Term": "organelle part"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0044424",
+   "Term": "intracellular part"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0043227",
+   "Term": "membrane-bounded organelle"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0044446",
+   "Term": "intracellular organelle part"
+  },
+  {
+   "Distance": 10,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 9,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0043227",
+   "Term": "membrane-bounded organelle"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0043229",
+   "Term": "intracellular organelle"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0044424",
+   "Term": "intracellular part"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0005622",
+   "Term": "intracellular"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0044464",
+   "Term": "cell part"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0043226",
+   "Term": "organelle"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0044424",
+   "Term": "intracellular part"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0043226",
+   "Term": "organelle"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0043227",
+   "Term": "membrane-bounded organelle"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0043229",
+   "Term": "intracellular organelle"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0044424",
+   "Term": "intracellular part"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0005622",
+   "Term": "intracellular"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0044464",
+   "Term": "cell part"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0005622",
+   "Term": "intracellular"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0043226",
+   "Term": "organelle"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0044424",
+   "Term": "intracellular part"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0043226",
+   "Term": "organelle"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0043226",
+   "Term": "organelle"
+  },
+  {
+   "Distance": 8,
+   "ParentID": "GO:0044464",
+   "Term": "cell part"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0043226",
+   "Term": "organelle"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0044464",
+   "Term": "cell part"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  }
+ ],
+ "GO:0006685": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0006684",
+   "Term": "sphingomyelin metabolic process"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0009395",
+   "Term": "phospholipid catabolic process"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0030149",
+   "Term": "sphingolipid catabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0006644",
+   "Term": "phospholipid metabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0006665",
+   "Term": "sphingolipid metabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0043603",
+   "Term": "cellular amide metabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0097164",
+   "Term": "ammonium ion metabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0006644",
+   "Term": "phospholipid metabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0044242",
+   "Term": "cellular lipid catabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0046434",
+   "Term": "organophosphate catabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0006665",
+   "Term": "sphingolipid metabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0046466",
+   "Term": "membrane lipid catabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:1901565",
+   "Term": "organonitrogen compound catabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0006796",
+   "Term": "phosphate-containing compound metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0019637",
+   "Term": "organophosphate metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0044255",
+   "Term": "cellular lipid metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0006643",
+   "Term": "membrane lipid metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:1901564",
+   "Term": "organonitrogen compound metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0034641",
+   "Term": "cellular nitrogen compound metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0006807",
+   "Term": "nitrogen compound metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0016042",
+   "Term": "lipid catabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0044248",
+   "Term": "cellular catabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0044255",
+   "Term": "cellular lipid metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0019637",
+   "Term": "organophosphate metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:1901575",
+   "Term": "organic substance catabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0006643",
+   "Term": "membrane lipid metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0044242",
+   "Term": "cellular lipid catabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:1901564",
+   "Term": "organonitrogen compound metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:1901575",
+   "Term": "organic substance catabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0006793",
+   "Term": "phosphorus metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0006793",
+   "Term": "phosphorus metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0071704",
+   "Term": "organic substance metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0006629",
+   "Term": "lipid metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0044237",
+   "Term": "cellular metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0044255",
+   "Term": "cellular lipid metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0006807",
+   "Term": "nitrogen compound metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0071704",
+   "Term": "organic substance metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0006807",
+   "Term": "nitrogen compound metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0044237",
+   "Term": "cellular metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0006629",
+   "Term": "lipid metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:1901575",
+   "Term": "organic substance catabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0009056",
+   "Term": "catabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0044237",
+   "Term": "cellular metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0009056",
+   "Term": "catabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0071704",
+   "Term": "organic substance metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0044237",
+   "Term": "cellular metabolic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0044238",
+   "Term": "primary metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0071704",
+   "Term": "organic substance metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0009987",
+   "Term": "cellular process"
+  },
+  {
+   "Distance": 8,
+   "ParentID": "GO:0008150",
+   "Term": "biological_process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0008150",
+   "Term": "biological_process"
+  }
+ ],
+ "GO:0006857": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0015833",
+   "Term": "peptide transport"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0042886",
+   "Term": "amide transport"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0071702",
+   "Term": "organic substance transport"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0071705",
+   "Term": "nitrogen compound transport"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0006810",
+   "Term": "transport"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0006810",
+   "Term": "transport"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0051234",
+   "Term": "establishment of localization"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0051179",
+   "Term": "localization"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0008150",
+   "Term": "biological_process"
+  }
+ ],
+ "GO:0016020": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  }
+ ],
+ "GO:0016021": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0031224",
+   "Term": "intrinsic component of membrane"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0044425",
+   "Term": "membrane part"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0016020",
+   "Term": "membrane"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0005575",
+   "Term": "cellular_component"
+  }
+ ],
+ "GO:0016260": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0009070",
+   "Term": "serine family amino acid biosynthetic process"
+  },
+  {
+   "Distance": 1,
+   "ParentID": "GO:0016259",
+   "Term": "selenocysteine metabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0009069",
+   "Term": "serine family amino acid metabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:1901607",
+   "Term": "alpha-amino acid biosynthetic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0009069",
+   "Term": "serine family amino acid metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:1901605",
+   "Term": "alpha-amino acid metabolic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0008652",
+   "Term": "cellular amino acid biosynthetic process"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:1901605",
+   "Term": "alpha-amino acid metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0006520",
+   "Term": "cellular amino acid metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0006520",
+   "Term": "cellular amino acid metabolic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0046394",
+   "Term": "carboxylic acid biosynthetic process"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:1901566",
+   "Term": "organonitrogen compound biosynthetic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0019752",
+   "Term": "carboxylic acid metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0044238",
+   "Term": "primary metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:1901564",
+   "Term": "organonitrogen compound metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0016053",
+   "Term": "organic acid biosynthetic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:0019752",
+   "Term": "carboxylic acid metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:1901564",
+   "Term": "organonitrogen compound metabolic process"
+  },
+  {
+   "Distance": 5,
+   "ParentID": "GO:1901576",
+   "Term": "organic substance biosynthetic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0043436",
+   "Term": "oxoacid metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0006807",
+   "Term": "nitrogen compound metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0071704",
+   "Term": "organic substance metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0006082",
+   "Term": "organic acid metabolic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0044249",
+   "Term": "cellular biosynthetic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:0044283",
+   "Term": "small molecule biosynthetic process"
+  },
+  {
+   "Distance": 6,
+   "ParentID": "GO:1901576",
+   "Term": "organic substance biosynthetic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0009058",
+   "Term": "biosynthetic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0071704",
+   "Term": "organic substance metabolic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0006082",
+   "Term": "organic acid metabolic process"
+  },
+  {
+   "Distance": 10,
+   "ParentID": "GO:0008150",
+   "Term": "biological_process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 9,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 8,
+   "ParentID": "GO:0044237",
+   "Term": "cellular metabolic process"
+  },
+  {
+   "Distance": 8,
+   "ParentID": "GO:0044281",
+   "Term": "small molecule metabolic process"
+  },
+  {
+   "Distance": 8,
+   "ParentID": "GO:0071704",
+   "Term": "organic substance metabolic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0009058",
+   "Term": "biosynthetic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0044237",
+   "Term": "cellular metabolic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0009058",
+   "Term": "biosynthetic process"
+  },
+  {
+   "Distance": 7,
+   "ParentID": "GO:0044281",
+   "Term": "small molecule metabolic process"
+  },
+  {
+   "Distance": 8,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 9,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 9,
+   "ParentID": "GO:0009987",
+   "Term": "cellular process"
+  },
+  {
+   "Distance": 9,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 10,
+   "ParentID": "GO:0008150",
+   "Term": "biological_process"
+  }
+ ],
+ "GO:0016491": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0003824",
+   "Term": "catalytic activity"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0016620": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0016903",
+   "Term": "oxidoreductase activity, acting on the aldehyde or oxo group of donors"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0016491",
+   "Term": "oxidoreductase activity"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0003824",
+   "Term": "catalytic activity"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0016787": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0003824",
+   "Term": "catalytic activity"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0016798": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0016787",
+   "Term": "hydrolase activity"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0003824",
+   "Term": "catalytic activity"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0022857": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0005215",
+   "Term": "transporter activity"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0046872": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0043169",
+   "Term": "cation binding"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0043167",
+   "Term": "ion binding"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0005488",
+   "Term": "binding"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0003674",
+   "Term": "molecular_function"
+  }
+ ],
+ "GO:0055085": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0006810",
+   "Term": "transport"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0051234",
+   "Term": "establishment of localization"
+  },
+  {
+   "Distance": 3,
+   "ParentID": "GO:0051179",
+   "Term": "localization"
+  },
+  {
+   "Distance": 4,
+   "ParentID": "GO:0008150",
+   "Term": "biological_process"
+  }
+ ],
+ "GO:0055114": [
+  {
+   "Distance": 1,
+   "ParentID": "GO:0008152",
+   "Term": "metabolic process"
+  },
+  {
+   "Distance": 2,
+   "ParentID": "GO:0008150",
+   "Term": "biological_process"
+  }
+ ]
+}
+const graph = [
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 2
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 2
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 5
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 5
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 2
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL026602",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL011756",
+  "value": 3
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL026602",
+  "value": 3
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL011756",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 3
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 3
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 2
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 4
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 6
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 10
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 12
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL011756",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL011756",
+  "value": 10
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL003318",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 2
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 2
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 2
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 2
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL003318",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 2
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 2
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 2
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 2
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 2
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 17
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 17
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 17
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 18
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 17
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 17
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 18
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 18
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 19
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 17
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 18
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 18
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 19
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 17
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 18
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 15
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 16
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 17
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 18
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 19
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 19
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 20
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 10
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 2
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 10
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 12
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 14
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 9
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 11
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL011756",
+  "value": 9
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL026602",
+  "value": 9
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 2
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 3
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 9
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 10
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 11
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 12
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 13
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 14
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 2
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 2
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 2
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 2
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL027839",
+  "target": "AAEL027839",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL006381",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL003318",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL003318",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 2
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 2
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 4
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 13
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 15
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 16
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 17
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 18
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 20
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 20
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 20
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL027637",
+  "value": 20
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL003318",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL003318",
+  "value": 14
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 7
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 9
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 10
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL011756",
+  "value": 12
+ },
+ {
+  "source": "AAEL027637",
+  "target": "AAEL026602",
+  "value": 12
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 5
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 5
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL003318",
+  "value": 3
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL003318",
+  "value": 3
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 2
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL026602",
+  "value": 2
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL011756",
+  "value": 2
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 2
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL026602",
+  "value": 4
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 3
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 3
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL026602",
+  "value": 10
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL026602",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL026602",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 2
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 8
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 3
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 3
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 11
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 3
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 3
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 3
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 3
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL026602",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 2
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 5
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL026602",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL011756",
+  "value": 8
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 2
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 4
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL006381",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 11
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL006381",
+  "value": 12
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 5
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 7
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 9
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 11
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL027637",
+  "value": 14
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 2
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 4
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL003318",
+  "value": 8
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL011756",
+  "value": 6
+ },
+ {
+  "source": "AAEL003318",
+  "target": "AAEL026602",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 7
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 8
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 9
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL006381",
+  "value": 10
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL003318",
+  "value": 9
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL003318",
+  "value": 9
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 7
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 8
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 9
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 10
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL027637",
+  "value": 12
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL003318",
+  "value": 6
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 2
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL026602",
+  "value": 2
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL011756",
+  "value": 2
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 2
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL011756",
+  "target": "AAEL026602",
+  "value": 4
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL011756",
+  "value": 4
+ },
+ {
+  "source": "AAEL026602",
+  "target": "AAEL026602",
+  "value": 4
+ }
+]
