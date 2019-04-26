@@ -53,100 +53,56 @@ text {
 files = [d3.json('links.json'),d3.json('genealogy.json')]; //, d3.json('links.json') //genealogy.json
 Promise.all(files).then(ready);
 
+// function ready([id1,id2]) {
+//   return new Promise(function(resolve, reject) {
+//     d3.json(id1, function(error, data) {
+//       if (error) {
+//         reject(error);
+//       } else {
+//         resolve(data.source);
+//       }
+//     });
+//   });
+// }
+
+// ready('5K4W6rqBFWDnAN6FQUkS6x')
+//   .then(function (data) {
+//     console.log(data);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
 function ready([main, main2]) {
   console.log("hi");
-  dates = [];
+  new_links = [];
   //main=us[0]
-  //console.log(main);
-    for (var i = 0; i < main[0].length; i++ ) {
+  //console.log(main.length);
+    for (var i = 0; i < main.length; i++ ) {
       ////for (var j=0; j< main.length; j++){
         //console.log(main.length)
         //console.log(main[0].length)
         //console.log(main[0].length)
-        //console.log(main[0][i]["source"]);
+        console.log(main[i]["source"]);
         //////dates.push(main[0][i]["source"]);
-        dates.push({
-        "source":   main[0][i]["source"],
-        "target": main[0][i]["target"],
-        "value": main[0][i]["value"]})
+        new_links.push({
+        "source":   main[i]["source"],
+        "target": main[i]["target"],
+        "value": main[i]["value"]})
         //console.log(dates);
+        //break
+        console.log(new_links);
         //break
       ////}
     }
     //for (var i = 0; i < main2[0].length; i++ ) {
-      console.log(main2);
+      //console.log(main2);
 
       //}
     //console.log(dates)
-    return dates;
-
-// var tip = d3.tip()
-//   .attr('class', 'd3-tip')
-//   .offset([0, 30]) 
-//   .html(function(d) {return "<p>State: " + state.get(d.id) + "<br>" + "County: " + county.get(d.id) + "<br>" + "Poverty Ratio: " + poverty.get(d.id) + "%" + "<br>" + "Total Population: " + total_pop.get(d.id) + "<br>" + "Income per Capita: " + income_cap.get(d.id) +"</p>"});
-
-//   svg.call(tip);
-
-//     svg.append("g")
-//       .attr("class", "counties")
-//     .selectAll("path")
-//     .data(topojson.feature(us, us.objects.counties).features)
-//     .enter().append("path")
-//       .attr("fill", function(d) { return color(d.Poverty = poverty.get(d.id)); })
-//       .attr("d", path)
-//     //.append("title")
-//     //  .text(function(d) { return d.Poverty + "%"; })
-//       .on('mouseover', tip.show)
-//       .on('mouseout', tip.hide);
-
-//   svg.append("path")
-//       .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
-//       .attr("class", "states")
-//       .attr("d", path);
-};
-
-//.catch(error => { console.log(error.message) });
-// THIS SHOULD WORK. I GIVE UP.
-// notes on troubleshooting:
-	// gives the error message "Failed to fetch." Great, thanks.
-	// Reading JSON through promises requires true JSON files (not technically JS files as before) so I reformatted
-		// but now they need to be in two files I think because they are two different objects
-		// Unless I just made them one object???
-		// But I still don't think that would fix the problem.
-	// I have almost identical script working for the hw2q6:
-		// files = [ d3.json('us.json'), 	// SEE???? IT WORKS HERE THE SAME SYNTAX D<
-		// 	d3.csv('county_poverty.csv', d=>{data transformation specific to csv}), 
-		// 	d3.csv('county_detail.csv', d=>{data transformation specific to csv}) ]
-		// Promise.all(files).then(run_the_rest_of_the_program_like_a_normal_language_you_piece_of_garbage_the_files_are_local, function(){console.log('no')})
-		// function run_the_rest_of_the_program_like_a_normal_language_you_piece_of_garbage_the_files_are_local([us, i_hate_javascript, promises_are_garbage]){
-		// 	// the literal rest of the script
-		// }
-	// I have validated the JSON files
-	// I have tested with just one file or the other, neither works (and we need both at once to call the function)
-	// I think my function name from the homework says it all
-	// Speaking of local files, I have no idea why this isn't working, but there are a million other ways to do it
-		// but they all require a URL or fancy other stuff and I don't know how to use the server
-		// this is the primary reason I am leaving it to someone else to do
-		// https://stackoverflow.com/questions/52528018/how-to-properly-load-local-json-in-d3
-			// this and others seem to indicate that the error I'm getting might be avoided on a web server
-		// But if it's my browser disallowing local file access, then why does the hw code work?!?!?!
-		// But hopefully it is that simple.
-function do_the_stuff([genealogy, links]){
-var nodes = {};
-// Compute the distinct nodes from the links.
-//var i = 0;
-//var nodes = {};
-var new_links=[]// create an empty array
-links.forEach(function(link) {
-if (link.value<=100){
-  new_links.push({
-    "source":   link.source,
-    "target": link.target,
-    "value": link.value
-  })}
-});
-//console.log(new_links);
-// Compute the distinct nodes from the links.
+ //   return new_links;
+//}
+console.log(new_links);
+var nodes={};
 new_links.forEach(function(link) {
     //console.log(link.value)
     //if(link.value<=7){
@@ -162,7 +118,7 @@ for (d in nodes) {
 new_links.forEach(function(link) {
   //if (link.value<=7){
   //  console.log(link.value)
-  //console.log(nodes[link.source.name])
+  console.log(nodes[link.source.name])
     nodes[link.source.name].degree += 1;
     nodes[link.target.name].degree += 1;})
 var width = 800,
