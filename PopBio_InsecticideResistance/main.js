@@ -44,6 +44,24 @@ function getRandomColor() {
 	return c;
 }
 
+var toolTip = d3.tip()
+	.attr('class', 'd3-tip')
+	.offset([0, 0])
+	.html(function(d) {
+		var bins = d[0];
+		for (var i = 0; i < bins.length; i++) {
+			var bin = bins[i];
+			if (bin.length > 0) {
+				var obj = bin[0];
+				return obj.insecticide;
+			}
+		}
+		return "Data not found";
+	});
+	
+//toolTip.direction('e');
+//svg.call(toolTip);
+
 d3.csv('insecticide-resistance.csv',
 	function(row) {	
 		var sample = {
@@ -206,10 +224,12 @@ function createChart(dataset, group, showAxes, isBackground) {
 			.on('mouseover', function(d) {
 				var hovered = d3.select(this);
 				hovered.attr('class', 'area-plot-hovered');
+				//toolTip.show();
 			})
 			.on('mouseout', function(d) {
 				var hovered = d3.select(this);
 				hovered.attr('class', 'area-plot');
+				//toolTip.hide();
 			});
 			
 		var linePlot = subsetPlotG.append('path')
@@ -221,10 +241,12 @@ function createChart(dataset, group, showAxes, isBackground) {
 			.on('mouseover', function(d) {
 				var hovered = d3.select(this);
 				hovered.attr('class', 'line-plot-hovered');
+				//toolTip.show();
 			})
 			.on('mouseout', function(d) {
 				var hovered = d3.select(this);
 				hovered.attr('class', 'line-plot');
+				//toolTip.hide();
 			});
 			
 		areaPlot.data(subsetData);
